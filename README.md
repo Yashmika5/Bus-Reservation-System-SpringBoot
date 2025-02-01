@@ -30,6 +30,73 @@ Each microservice has its own set of RESTful APIs for performing various operati
     "role": "PASSENGER",
     "nic": "98938743878V"
   }
+
+#### Login user
+- **Endpoint**: `POST http://localhost:8091/api/passengers/login`
+- **Request Body**:
+  ```json
+  {
+  "email": "amal@gmail.com",
+  "password": "1234Z"
+  }
+
+
+#### Get all passengers
+- **Endpoint**: `GET http://localhost:8091/api/passengers`
+
+#### Get Passenger By ID
+- **Endpoint**: `GET http://localhost:8091/api/passengers/1`
+
+#### Update a passenger
+- **Endpoint**: `PUT http://localhost:8091/api/passengers/1`
+- **Request Body**:
+  ```json
+  {
+  "userId": 1,
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "john@example.com",
+  "password": "secure123",
+  "phoneNumber": "1234567890",
+  "gender": "Male",
+  "address": "Colombo",
+  "role": "PASSENGER",
+  "nic": null
+  }
+
+
+  #### Create a Passenger
+- **Endpoint**: `POST http://localhost:8091/api/passengers`
+- **Request Body**:
+  ```json
+  {
+    "firstName": "Amal",
+    "lastName": "Fernando",
+    "email": "amal@gmail.com",
+    "password": "1234Z",
+    "phoneNumber": "07124235334",
+    "gender": "Male",
+    "address": "Galle",
+    "role": "PASSENGER",
+    "nic": "98938743878V"
+  }
+
+  #### Create a Passenger
+- **Endpoint**: `POST http://localhost:8091/api/passengers`
+- **Request Body**:
+  ```json
+  {
+    "firstName": "Amal",
+    "lastName": "Fernando",
+    "email": "amal@gmail.com",
+    "password": "1234Z",
+    "phoneNumber": "07124235334",
+    "gender": "Male",
+    "address": "Galle",
+    "role": "PASSENGER",
+    "nic": "98938743878V"
+  }
+  
 Login a Passenger
 Endpoint: POST http://localhost:8091/api/passengers/login
 Request Body:
